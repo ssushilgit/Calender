@@ -1,0 +1,81 @@
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;z-index: 10;
+    background: linear-gradient(to right, darkblue,  grey);
+}
+
+nav h3{
+    font-size: 28px;
+    font-weight: bolder;
+    color: #f0f0f0;
+    text-decoration: none;  
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    color: #f0f0f0;
+    font-size: 18px;
+    margin: 5px 20px;
+}
+nav ul li img{
+    width: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: whitesmoke;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media(max-width: 700px){
+    nav h3{
+        font-size: 24px;  
+    }
+    nav ul li{
+        font-size: 16px;
+        margin: 5px 15px;
+    }
+    .nav-signin img{
+        width: 12px;
+    }
+}
+
+@media(max-width: 540px){
+    nav{
+        background: darkblue;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        background: linear-gradient(to right, darkblue, grey);
+        transition: 0.5s;
+    }
+    nav ul li{
+        color: whitesmoke;
+        display: block;
+        margin: 25px 30px;
+
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}
