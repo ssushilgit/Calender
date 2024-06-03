@@ -8,6 +8,8 @@ nav{
     align-items: center;
     justify-content: space-between;z-index: 10;
     background: linear-gradient(to right, darkblue,  grey);
+    background-size: cover;
+    background-position: center;
 }
 
 nav h3{
@@ -49,7 +51,7 @@ nav ul li:hover{
     }
 }
 
-@media(max-width: 540px){
+@media(max-width: 567px){
     nav{
         background: darkblue;
     }
@@ -77,5 +79,11 @@ nav ul li:hover{
     }
     .hide-mobile-menu{
         right: -200px;
+    }
+}
+
+@media(max-width: 567px){
+    nav ul li{
+        display: none;
     }
 }
