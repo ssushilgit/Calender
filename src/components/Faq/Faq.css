@@ -1,0 +1,34 @@
+.faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+
+.faq-question {
+    color: bisque;
+    padding: 5px 20px;
+}
+
+.faq-answer {
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.faq-item h3 {
+    margin: 0;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6;
+}

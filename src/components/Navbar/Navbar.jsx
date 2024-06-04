@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import dark_arrow from '../assets/dark-arrow.png'
 import menu_icon from '../assets/menu-icon.png'
@@ -8,8 +8,17 @@ const Navbar = () => {
     const toggleMenu = () =>{
         mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
     }
+
+    const [sticky, setSticky] =useState(false)
+
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            window.scrollY > 50 ? setSticky(true) : setSticky(false);
+        })
+    },[]);
+
     return (
-        <nav className='container'>
+        <nav className={`container ${sticky? 'dark-nav': ''}`}>
             <h3><a href="/"> Softech </a></h3>
             <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
                 <li>

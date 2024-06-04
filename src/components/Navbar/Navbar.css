@@ -6,8 +6,8 @@ nav{
     top: 0;
     left: 0;
     align-items: center;
-    justify-content: space-between;z-index: 10;
-    /* background: linear-gradient(to right, darkblue,  grey); */
+    justify-content: space-between;
+    z-index: 10;
 
 }
 
@@ -36,6 +36,10 @@ nav ul li:hover{
 .menu-icon{
     display: none;
 }
+.dark-nav{
+    background: linear-gradient(to right, darkblue, grey);
+    transition: 0.5s;
+}
 
 @media(max-width: 700px){
     nav h3{
@@ -51,9 +55,7 @@ nav ul li:hover{
 }
 
 @media(max-width: 567px){
-    nav{
-        background: darkblue;
-    }
+   
     nav ul{
         position: fixed;
         top: 0;
@@ -62,8 +64,8 @@ nav ul li:hover{
         z-index: -1;
         width: 200px;
         padding-top: 70px;
-        background: linear-gradient(to right, darkblue, grey);
-        transition: 0.5s;
+        background: rgb(98, 44, 186);
+        transition: 1s;
     }
     nav ul li{
         color: whitesmoke;
@@ -81,8 +83,3 @@ nav ul li:hover{
     }
 }
 
-/* @media(max-width: 567px){
-    nav ul li{
-        display: none;
-    }
-} */
