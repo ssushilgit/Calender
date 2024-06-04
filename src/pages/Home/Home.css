@@ -1,0 +1,13 @@
+.get-started-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5%;
+    
+}
+.get-started{
+    background: wheat;
+    color: black;
+}

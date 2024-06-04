@@ -20,6 +20,7 @@ const Navbar = () => {
     return (
         <nav className={`container ${sticky? 'dark-nav': ''}`}>
             <h3><a href="/"> Softech </a></h3>
+            
             <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
                 <li>
                     <a href="/">Home</a>
