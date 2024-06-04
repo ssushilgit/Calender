@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import dark_arrow from '../../assets/dark-arrow.png'
-import menu_icon from '../../assets/menu-icon.png'
+import dark_arrow from '../assets/dark-arrow.png'
+import menu_icon from '../assets/menu-icon.png'
 const Navbar = () => {
 
     const [mobileMenu, setMobileMenu] = useState(false)

@@ -8,7 +8,7 @@
     color: white;
     text-align: center;
     margin-top: 60px;
-    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('../../assets//hero-img.png');
+    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('../../components/assets/hero-img.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

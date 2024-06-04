@@ -1,0 +1,44 @@
+.title {
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7));
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    box-sizing: border-box;
+}
+
+.title h2 {
+    font-size: 32px;
+    color: whitesmoke;
+    margin-top: 5px;
+    text-transform: none;
+}
+
+.another-subtitle {
+    margin-top: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(200, 219, 235);
+    padding: 5px;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 14px;
+        padding-top: 80px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .another-subtitle {
+        width: 100%;
+    }
+}
