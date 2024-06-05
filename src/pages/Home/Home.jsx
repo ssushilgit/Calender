@@ -7,10 +7,13 @@ import Faq from '../../components/Faq/Faq'
 import dark_arrow from '../../components/assets/dark-arrow.png'
 import './Home.css'
 import Footer from '../../components/Footer/Footer'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
+
       <Hero />
       <Picture />
       <Title subtitle='Manage your events' title='Everything you need to start managing your events' subtitleAnother='Discover a complete solution designed to effortlessly kickstart your event management journey, offering all the essential tools you need ' />
