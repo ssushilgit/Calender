@@ -8,12 +8,12 @@ import dark_arrow from '../../components/assets/dark-arrow.png'
 import './Home.css'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import { Link as RouterLink } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-
       <Hero />
       <Picture />
       <Title subtitle='Manage your events' title='Everything you need to start managing your events' subtitleAnother='Discover a complete solution designed to effortlessly kickstart your event management journey, offering all the essential tools you need ' />
@@ -22,9 +22,13 @@ const Home = () => {
       <Faq />
       <Title title='Optimize Your Event Managing process!' subtitleAnother='Ease your event planning and managing process with Softech Event management system' />
       <div className="get-started-button">
-        <button className="get-started">Get started <img src={dark_arrow} alt="" />  </button>
+        <RouterLink to="/login">
+          <button className="get-started">
+            Get started <img src={dark_arrow} alt="arrow" />
+          </button>
+        </RouterLink>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
