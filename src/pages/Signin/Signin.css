@@ -1,13 +1,52 @@
 /* Signin.css */
+.signin-container {
+    display: flex;
+    flex-direction: column; /* Stacking the header and main content */
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1200px; /* Increased max width for more space */
+    text-align: center; /* Center the text */
+}
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between header and main content */
+    color: #eaeaea;
+}
+
+.main-content {
+    display: flex; /* Side-by-side layout */
+    width: 100%; /* Full width of the container */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between image and sign-up form */
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px; /* Adjust based on your preference */
+    border-radius: 10px;
+}
+
 .signin {
+    flex: 1;
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 40px; /* Reduced margin-top */
-    background: rgba(0, 0, 0, 0.262); /* Slightly transparent background */
-    padding: 15px 10px; /* Reduced padding */
-    width: 80%; /* Use a smaller percentage for width */
-    max-width: 400px; /* Reduced max width */
+    background: rgba(0, 0, 0, 0.262);
+    padding: 15px 10px;
+    width: 80%;
+    max-width: 400px;
+    min-height: 600px; /* Increased minimum height */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
@@ -16,62 +55,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px; /* Reduced gap */
+    gap: 7px;
     width: 100%;
-    margin-top: 20px; /* Reduced margin-top */
+    margin-top: 20px;
 }
 
 .text {
     color: #eaeaea;
-    font-size: 36px; /* Reduced font-size */
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .underline {
-    width: 60px; /* Reduced width */
-    height: 4px; /* Reduced height */
+    width: 80px;
+    height: 2px;
     background: #eaeaea;
     border-radius: 10px;
 }
 
 .inputs {
-    margin-top: 30px; /* Reduced margin-top */
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Reduced gap */
+    gap: 15px;
 }
 
 .input {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 100%; /* Use full width */
-    max-width: 350px; /* Reduced max width */
-    height: 60px; /* Reduced height */
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
     background: #eaeaea;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .input img {
-    margin: 0 10px; /* Reduced margin */
+    margin: 0 10px;
 }
 
 .input input {
-    height: 40px; /* Reduced height */
-    width: calc(100% - 40px); /* Adjust width to be responsive */
+    height: 40px;
+    width: calc(100% - 40px);
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
-    font-size: 16px; /* Reduced font-size */
+    font-size: 16px;
 }
 
 .forgot-password {
-    padding-left: 10px; /* Reduced padding-left */
+    padding-left: 10px;
     margin-top: 0px;
     color: #eaeaea;
-    font-size: 15px; /* Reduced font-size */
+    font-size: 15px;
     text-align: center;
 }
 
@@ -93,12 +132,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px; /* Reduced width */
-    height: 40px; /* Reduced height */
+    width: 150px;
+    height: 40px;
     color: darkblue;
     background: #fff;
     border-radius: 50px;
-    font-size: 16px; /* Reduced font-size */
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
@@ -108,59 +147,68 @@
     background: darkblue;
     color: #fff;
 }
-.darkblue{
-    background: darkblue;
-    color: #fff;
+
+@media (max-width: 1100px) {
+    .image-section {
+        display: none; /* Hide image section on screens narrower than 1100px */
+    }
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex-direction: column; /* Stack image and sign-up form vertically */
+    }
+
     .signin {
         width: 90%;
         padding: 15px;
     }
 
     .text {
-        font-size: 30px; /* Further reduced font-size */
+        font-size: 30px;
     }
 
     .input {
-        height: 50px; /* Reduced height */
+        height: 50px;
     }
 
     .input input {
-        font-size: 14px; /* Reduced font-size */
+        font-size: 14px;
     }
 
     .submit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 120px; /* Reduced width */
-        height: 30px; /* Reduced height */
-        font-size: 14px; /* Reduced font-size */
-        font-weight: 700;
-
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
+    .header-title {
+        font-size: 24px;
+    }
+
     .text {
-        font-size: 24px; /* Further reduced font-size */
+        font-size: 24px;
     }
 
     .forgot-password {
         padding-left: 0;
-        font-size: 13px; /* Reduced font-size */
+        font-size: 13px;
     }
 
     .submit-container {
         flex-direction: column;
-        gap: 10px; /* Reduced gap */
+        gap: 10px;
     }
 
     .submit {
-        height: 35px; /* Reduced height */
-        font-size: 14px; /* Reduced font-size */
+        height: 35px;
+        font-size: 14px;
     }
 }

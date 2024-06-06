@@ -2,7 +2,7 @@
 .signin {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 40px; /* Reduced margin-top */
     background: rgba(0, 0, 0, 0.262); /* Slightly transparent background */
     padding: 15px 10px; /* Reduced padding */
@@ -10,6 +10,7 @@
     max-width: 400px; /* Reduced max width */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+ 
 }
 
 .header {
