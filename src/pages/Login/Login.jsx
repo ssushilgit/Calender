@@ -34,7 +34,11 @@ const Signin = () => {
                     </div>
 
                     <div className="submit-container">
-                        <div className="submit">Login</div>
+                        <div className="submit">
+                            <Link to='/maindashboard'>
+                                Login
+                            </Link>
+                        </div>
                     </div>
 
                     <div className="forgot-password">

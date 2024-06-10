@@ -11,3 +11,6 @@
     background: #eaeaea;
     color: black;
 }
+.get-started:hover{
+    border-radius: 50px;
+}
