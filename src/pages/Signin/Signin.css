@@ -1,27 +1,27 @@
 /* Signin.css */
 .signin-container {
     display: flex;
-    flex-direction: column; /* Stacking the header and main content */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 40px auto;
-    max-width: 1200px; /* Increased max width for more space */
-    text-align: center; /* Center the text */
+    max-width: 1200px;
+    text-align: center;
 }
 
 .header-title {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px; /* Space between header and main content */
+    margin-bottom: 20px;
     color: #eaeaea;
 }
 
 .main-content-signup {
-    display: flex; /* Side-by-side layout */
-    width: 100%; /* Full width of the container */
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between image and sign-up form */
+    gap: 20px;
 }
 
 .image-section {
@@ -33,7 +33,7 @@
 
 .image-section img {
     width: 100%;
-    max-width: 500px; /* Adjust based on your preference */
+    max-width: 500px;
     border-radius: 10px;
 }
 
@@ -46,16 +46,15 @@
     padding: 15px 10px;
     width: 80%;
     max-width: 400px;
-    min-height: 600px; /* Increased minimum height */
+    min-height: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.header {
+.header-signin {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
     width: 100%;
     margin-top: 20px;
 }
@@ -67,11 +66,11 @@
 }
 
 .underline {
-
     width: 80px;
     height: 2px;
     background: #eaeaea;
     border-radius: 10px;
+    margin-top: 7px; /* Ensure the underline has some margin from the text */
 }
 
 .inputs {
@@ -151,10 +150,9 @@
 
 @media (max-width: 1100px) {
     .image-section {
-        display: none; /* Hide image section on screens narrower than 1100px */
+        display: none;
     }
 }
-
 
 @media (max-width: 768px) {
     .signin-container {
@@ -162,7 +160,7 @@
     }
 
     .main-content {
-        flex-direction: column; /* Stack image and sign-up form vertically */
+        flex-direction: column;
     }
 
     .signin {

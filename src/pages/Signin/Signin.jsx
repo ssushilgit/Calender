@@ -17,7 +17,7 @@ const Signin = () => {
                     <img src={register_image} alt="Signup" />
                 </div>
                 <div className='signin'>
-                    <div className="header">
+                    <div className="header-signin">
                         <div className="text">Sign Up</div>
                         <div className="underline"></div>
                     </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import './Dashboard.css';
 import user from '../../assets/user.jpg'
-const Dashboard = () => {
+import PieChartComponent from "../Chart/PieChartComponent";
+
+const  Dashboard = () => {
   return (
     <div className="dashboard">
       <header className="header">
@@ -40,19 +42,18 @@ const Dashboard = () => {
           </div>
           <div className="total-task">
             <h2>Total Task</h2>
-            <p>27</p>
+            <p>27</p>            
           </div>
         </div>
         <div className="charts">
           <div className="task-chart">
-            {/* Insert your Pie chart component here */}
+          <h3>Tasks</h3>
+            <PieChartComponent/>
           </div>
           <div className="user-per-month">
-            {/* Insert your Line chart component here */}
           </div>
         </div>
         <div className="number-of-events">
-          {/* Insert your Bar chart component here */}
         </div>
       </section>
     </div>

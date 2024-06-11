@@ -16,12 +16,11 @@ const Signin = () => {
                     <img src={login_image} alt="Signup" />
                 </div>
                 <div className='signin'>
-                    <div className="header">
+                    <div className="header-login">
                         <div className="text">Login</div>
                         <div className="underline"></div>
                     </div>
                     <div className="inputs">
-
                         <div className="input">
                             <img src={email_icon} alt="" />
                             <input type="email" placeholder='Email ID' />
