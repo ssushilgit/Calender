@@ -37,8 +37,9 @@ nav ul li:hover{
     display: none;
 }
 .dark-nav{
-    background: linear-gradient(to right, darkblue, grey);
-    transition: 0.5s;
+    /* background: linear-gradient(to right, #1f1f25f4, grey); */
+    background: rgba(17, 1, 1, 0.8);
+    transition: 3s;
 }
 
 @media(max-width: 700px){
@@ -64,7 +65,7 @@ nav ul li:hover{
         z-index: -1;
         width: 200px;
         padding-top: 70px;
-        background: rgb(98, 44, 186);
+        background: #1f1f25f4;
         transition: 1s;
     }
     nav ul li{

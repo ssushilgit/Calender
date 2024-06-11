@@ -2,6 +2,8 @@ import React from 'react';
 import './Dashboard.css';
 import user from '../../assets/user.jpg'
 import PieChartComponent from "../Chart/PieChartComponent";
+import LineChartComponent from '../Chart/LineChartComponent';
+import BarGraphComponent from '../Chart/BarGraphComponent';
 
 const  Dashboard = () => {
   return (
@@ -51,9 +53,14 @@ const  Dashboard = () => {
             <PieChartComponent/>
           </div>
           <div className="user-per-month">
+          <h3>Users Per Month</h3>
+            <LineChartComponent/>
           </div>
         </div>
         <div className="number-of-events">
+        <h3>Number of Events</h3>
+        <p>Details about number of events per month</p>
+        <BarGraphComponent/>
         </div>
       </section>
     </div>

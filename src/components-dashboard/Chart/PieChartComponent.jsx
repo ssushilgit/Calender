@@ -25,7 +25,7 @@ const PieChartComponent = () => {
           isAnimationActive={true}
           data={data}
           cx="50%"
-          cy="50%"
+          cy="30%"
           outerRadius={80}
           label
         >
