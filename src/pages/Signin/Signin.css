@@ -16,7 +16,7 @@
     color: #eaeaea;
 }
 
-.main-content {
+.main-content-signup {
     display: flex; /* Side-by-side layout */
     width: 100%; /* Full width of the container */
     justify-content: center;
@@ -67,6 +67,7 @@
 }
 
 .underline {
+
     width: 80px;
     height: 2px;
     background: #eaeaea;

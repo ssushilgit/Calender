@@ -10,7 +10,7 @@ const Sidebar = ({ onMenuClick }) => {
         <hr />
         <div className="user-profile">
           <img src={user} alt="User Profile" className="user-img" />
-          <div className="user-info">
+          <div className="user-infos">
             <p className="user-role">SuperAdmin</p>
             <p className="user-name">superadmin</p>
           </div>

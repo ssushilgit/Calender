@@ -1,0 +1,104 @@
+.dashboard {
+  color: white;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  padding-top: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.task-status {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.task i {
+  margin-right: 10px; /* Adjust space between icon and text */
+  font-size: 1.2em; /* Adjust icon size if needed */
+}
+
+.todo i {
+  color: #ffd700; /* Optional: color code for each icon */
+}
+
+.in-progress i {
+  color: #00bfff;
+}
+
+.completed i {
+  color: #7cfc00;
+}
+
+.backlogs i {
+  color: #ff4500;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.event-details h1{
+  font-size: 2rem;
+}
+
+.event-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.event-summary > div {
+  background-color: #2c2c38f4;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+}
+
+.task-chart, .user-per-month {
+  background-color: #2c2c38f4;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.number-of-events {
+  background-color: #2c2c38f4;
+  padding: 20px;
+  border-radius: 10px;
+}

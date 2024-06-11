@@ -12,7 +12,7 @@ const Signin = () => {
             <div className='header-title'>
                 Calendar Management System
             </div>
-            <div className='main-content'>
+            <div className='main-content-signup'>
                 <div className='image-section'>
                     <img src={register_image} alt="Signup" />
                 </div>

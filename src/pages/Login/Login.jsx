@@ -1,5 +1,4 @@
 import React from 'react';
-import user_icon from '../../components/assets/person.png';
 import email_icon from '../../components/assets/email.png';
 import password_icon from '../../components/assets/password.png';
 import login_image from '../../components/assets/login.svg'; // Add your image path here
@@ -12,7 +11,7 @@ const Signin = () => {
             <div className='header-title'>
                 Calendar Management System
             </div>
-            <div className='main-content'>
+            <div className='main-content-login'>
                 <div className='image-section'>
                     <img src={login_image} alt="Signup" />
                 </div>
