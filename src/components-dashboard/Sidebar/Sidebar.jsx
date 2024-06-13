@@ -25,7 +25,7 @@ const Sidebar = ({ onMenuClick }) => {
         <li onClick={() => onMenuClick('reports')}><a href="#reports"><i className="fas fa-file-alt"></i> Reports</a></li>
       </ul>
       <div className="logout">
-        <a href="#logout"><i className="icon icon-logout"></i> Log Out</a>
+        <a href="/"><i className="icon icon-logout"></i> Log Out</a>
       </div>
     </div>
   );

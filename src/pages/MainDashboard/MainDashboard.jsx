@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './MainDashboard.css';
 import Sidebar from '../../components-dashboard/Sidebar/Sidebar';
 import Dashboard from '../../components-dashboard/Dashboard/Dashboard';
@@ -10,6 +10,17 @@ import Tasks from '../../components-dashboard/Tasks/Tasks';
 
 const MainDashboard = () => {
   const [activePage, setActivePage] = useState('dashboard');
+
+  useEffect(() => {
+    const savedPage = localStorage.getItem('activePage');
+    if (savedPage) {
+      setActivePage(savedPage);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('activePage', activePage);
+  }, [activePage]);
 
   const renderPage = () => {
     switch (activePage) {
