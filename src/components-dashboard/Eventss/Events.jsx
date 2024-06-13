@@ -89,7 +89,7 @@ function EventsList() {
           </tbody>
         </table>
       </div>
-      <div className="pagination">
+      <div className="pagination-event">
         <button onClick={handleBack} disabled={currentPage === 1}>Back</button>
         <span>Page {currentPage} of {totalPages}</span>
         <button onClick={handleNext} disabled={currentPage === totalPages}>Next</button>

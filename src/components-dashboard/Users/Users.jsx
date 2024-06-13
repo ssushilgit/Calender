@@ -99,10 +99,10 @@ const Users = () => {
           </tbody>
         </table>
 
-        <div className="pagination">
-          <button className="pagination-btn" onClick={handlePreviousClick} disabled={currentPage === 1}>❮</button>
+        <div className="pagination-user">
+          <button className="pagination-user-btn" onClick={handlePreviousClick} disabled={currentPage === 1}>❮</button>
           <span>{startIndex + 1}-{startIndex + selectedUsers.length} of {users.length}</span>
-          <button className="pagination-btn" onClick={handleNextClick} disabled={currentPage === totalPages}>❯</button>
+          <button className="pagination-user-btn" onClick={handleNextClick} disabled={currentPage === totalPages}>❯</button>
         </div>
       </div>
       <button className="add-user-btn" onClick={handleAddUserClick}>Add User</button>

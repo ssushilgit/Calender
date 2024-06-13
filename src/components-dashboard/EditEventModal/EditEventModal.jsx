@@ -20,7 +20,7 @@ function EditEventModal({ event, onClose, onSave }) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h2>Edit Event</h2>
+        <h1>Edit Event</h1>
         <form onSubmit={handleSubmit}>
           <label>
             Event:

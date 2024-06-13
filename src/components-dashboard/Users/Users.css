@@ -70,7 +70,7 @@ td {
   cursor: pointer;
 }
 
-.pagination {
+.pagination-user {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +78,7 @@ td {
   background-color: #f0f0f0;
 }
 
-.pagination-btn {
+.pagination-user-btn {
   background-color: transparent;
   border: none;
   font-size: 20px;
