@@ -1,76 +1,96 @@
 .events-list {
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.header-event {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+.events-list h1 {
+  text-align: center;
   
-  .events-list h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .events-list select {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .events-list table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-  
-  .events-list th, .events-list td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .events-list th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  
-  .events-list td {
-    background-color: #fff;
-  }
-  
-  .events-list tr:nth-child(even) td {
-    background-color: #f9f9f9;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .pagination button {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pagination button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .pagination button:not(:disabled):hover {
-    background-color: #0056b3;
-  }
-  
-  .pagination span {
-    font-size: 16px;
-    color: #333;
-  }
-  
+  color: white;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  margin-right: 10px;
+  color: white;
+}
+
+.events-list select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.events-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.events-list th, .events-list td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.events-list th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.events-list td {
+  background-color: #fff;
+}
+
+.events-list tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.pagination span {
+  font-size: 16px;
+  color: #333;
+}

@@ -3,6 +3,7 @@ import EventRow from '../../components-dashboard/EventRow/EventRow';
 import './Events.css';
 import EditEventModal from '../../components-dashboard/EditEventModal/EditEventModal';
 
+
 const eventsData = [
   { id: 1, date: '2080-6-1', event: 'dash 23', description: 'dashain 32', time: '8:11 AM' },
   { id: 2, date: '2080-6-26', event: 'tihar holiday', description: 'tihar celebrati', time: '10:13 AM' },
@@ -58,29 +59,36 @@ function EventsList() {
 
   return (
     <div className="events-list">
-      <h1>Events List</h1>
-      <select value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
-        {months.map(month => (
-          <option key={month} value={month}>{month}</option>
-        ))}
-      </select>
-      <table>
-        <thead>
-          <tr>
-            <th>S.N</th>
-            <th>Nepali Date</th>
-            <th>Event</th>
-            <th>Description</th>
-            <th>Time</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentEvents.map((event, index) => (
-            <EventRow key={event.id} event={event} index={indexOfFirstEvent + index + 1} onEditClick={handleEditClick} />
+      <header className="header-event">
+        <h1>Events List</h1>
+      </header>
+      <div className="filter-container">
+        <label htmlFor="month-filter">Filtered events by: </label>
+        <select id="month-filter" value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+          {months.map(month => (
+            <option key={month} value={month}>{month}</option>
           ))}
-        </tbody>
-      </table>
+        </select>
+      </div>
+      <div className="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>S.N</th>
+              <th>Nepali Date</th>
+              <th>Event</th>
+              <th>Description</th>
+              <th>Time</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentEvents.map((event, index) => (
+              <EventRow key={event.id} event={event} index={indexOfFirstEvent + index + 1} onEditClick={handleEditClick} />
+            ))}
+          </tbody>
+        </table>
+      </div>
       <div className="pagination">
         <button onClick={handleBack} disabled={currentPage === 1}>Back</button>
         <span>Page {currentPage} of {totalPages}</span>
@@ -90,4 +98,7 @@ function EventsList() {
     </div>
   );
 }
+
 export default EventsList;
+
+
