@@ -18,8 +18,9 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   
-  .modal-content h2 {
+  .modal-content h1 {
     margin-top: 0;
+    color:rgba(0, 0, 0, 0.7);
   }
   
   .modal-content form {
